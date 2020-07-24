@@ -55,13 +55,8 @@ for i = 1:N  		%Generate sparsity matrix
 
 
 ### References
-
-  * Bangerth, W., & Heister, T. (n.d.). The deal.IIFinite Element Library. Retrieved July 28, 2016, from http://www.dealii.org/
   * Hughes, Thomas J. R.The Finite Element Method: Linear Static and Dynamic Finite Element Analysis. Englewood Cliffs, NJ: Prentice-Hall, 1987. Print.
   * Kolukula, Siva. MatlabMesh Postprocessing. Net.
 
-
-
-
 ### License
-[Open Source](https://opensource.org/licenses/MIT "MIT")
+[MIT](https://opensource.org/licenses/MIT "MIT")
