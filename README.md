@@ -19,6 +19,17 @@ It is written in Matlab, is self-contained, and no external dependencys.
  * Volume Flow (Q)
  * Damage (hk)
 
+## Installation
+
+Download package:
+```git
+git clone https://github.com/FracThePermian/Reservoir-Simulation-Part-B
+```
+
+Navigate to folder from Matlab (~/Reservoir-Simulation-Part-B/) and run the Project_1_Main.m script.
+
+
+
 ## Method and Materials
 * The Finite Element Method (FEM) is an essential numerical tool for solving boundary value problems of PDE's. 
 
