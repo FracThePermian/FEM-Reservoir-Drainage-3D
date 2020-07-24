@@ -24,21 +24,21 @@ It is written in Matlab, is self-contained, and no external dependencys.
 
 **Snippet of module that generates sparsity matrix**
 ```matlab
-for i = 1:N  		%Generate sparsity matrix
+for i = 1:N  		                               %Generate sparsity matrix
     if i+NX <= N 
         T_diag = T_frac(i,i+NX,Ay,mu,Bw,dy);
         T(i,i+NX) = T(i,i+NX)-T_diag;
         T(i+NX,i) = T(i+NX,i)-T_diag;
     end
     
-    % This is for diagonals toward the inside of sparsity
+                                              % This is for diagonals toward the inside of sparsity
     if (mod(i,NX) ~= 0) && (i+1 <= N)  
         T_diag = T_frac(i,i+1,Ax,mu,Bw,dx);
         T(i,i+1) = T(i,i+1)-T_diag;
         T(i+1,i) = T(i+1,i)-T_diag;
     end
-    T(i,i) = abs(sum(T(i,:)));%Sum up every row on every iteration
-    if BC(i) ~= 0 %if and only if the boundary condition exists
+    T(i,i) = abs(sum(T(i,:)));                % Sum up every row on every iteration
+    if BC(i) ~= 0                             % if and only if the boundary condition exists
         T(i,i) = T(i,i)+BC(i)*2*T_frac(i,i,Ax,mu,Bw,dx);
     end
 ```
